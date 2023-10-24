@@ -113,7 +113,7 @@
      font-size: 1rem;
      font-weight: bold;
      cursor: pointer;
-     transition: scale 0.2 ease;
+     transition: transform 0.2s ease;
  }
  .action_btn:hover{
      scale: 1.05;
@@ -160,7 +160,7 @@
      color:  #fd5800;
  }
 
- #sign_up{
+ .sign_up{
      background-color: #fd5800 ;
      color: white;
      padding: 0.5rem 2rem;
@@ -170,17 +170,17 @@
      font-size: 0.8rem;
      font-weight: bold;
      cursor: pointer;
-     transition: scale 0.2 ease;
+     transition: scale 0.2s ease;
  }
-#sign_up:hover{
+.sign_up:hover{
     color: navy;
 }
 
-#linksintext{
+.linksintext{
     color: #fd5800;
     font-weight: bold;
 }
-#linksintext:hover{
+.linksintext:hover{
     color: darkred;
 }
 
