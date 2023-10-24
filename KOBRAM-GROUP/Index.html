@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="Eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/Indexstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>KOBRAM Investment Group</title>
+ </head>
+
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="Index.html">KOBRAM GROUP</a> </div>
+            <ul class="links">
+                <li><a href="Index.html">Home</a></li>
+                 <li><a href="Accounts.html">Accounts</a></li>
+                 <li><a href="Loans.html">Loans</a></li>
+                 <li><a href="About_Us.html">About Us</a></li>
+                 <li><a href="Contact_Us.htmlUs">Contact Us</a></li>
+            </ul>
+             <a href="Sign_up.html" class="action_btn" id="sign_up">Sign Up</a>
+            <a href="login.html" class="action_btn">Log In</a>
+             <div class="toggle_btn">
+                 <i class="fa-solid fa-bars"></i>
+             </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="Index.html">Home</a></li>
+                 <li><a href="Accounts.html">Accounts</a></li>
+                 <li><a href="Loans.html">Loans</a></li>
+                 <li><a href="About_Us.html">About Us</a></li>
+                 <li><a href="Contact_Us.htmlUs">Contact Us</a></li>
+            <li><a href="login.html" class="action_btn">Log In</a> </li>
+            <li><a href="Sign_up.html" class="action_btn" id="sign_up">Sign Up</a> </li>
+
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>KOBRAM Investment Group</h1>
+            <p>
+              Welcome to <a href="Index.html" class="links" id="linksintext">KOBRAM Investment Group</a>, the ultimate financial haven for students across all universities in Kenya!
+                <br>Our mission is to empower students on their journey to financial independence, both before and after.
+                <br> We understand the unique financial challenges that students face, and we're here to provide support, guidance, and opportunities for growth.
+                <br>With our student-focused approach, we offer a range of financial services and resources designed to help you save, invest, and secure your financial future.
+                <br> <a href="Sign_up.html" class="links" id="linksintext">Join us</a> today, and let's embark on a prosperous financial journey together. Your dreams are our priority.
+            </p>
+        </section>
+    </main>
+    <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+    }
+    </script>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2023 KOBRAM Investment Group</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="mailto:your@email.com"><i class="far fa-envelope"></i></a></li>
+
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
