@@ -1,4 +1,4 @@
-* {
+ *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,131 +6,189 @@
 }
 
 body {
-  display: flex;
+     display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("your-background-image.jpg") no-repeat;
+  background: url(https://images.unsplash.com/photo-1517338482058-3ca727223089?auto=format&fit=crop&q=80&w=2073&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ) no-repeat;
   background-size: cover;
   background-position: center;
+   background-attachment: fixed;
+
 }
 
+@media (max-width: 430px) {
+   body {
+        min-width: 80%; /* Adjust this percentage based on your design at 430px or below */
+        max-width: 60rem;
+
+
+    }
+}
+
+/*WRAPPER*/
 .wrapper {
-  width: 800px;
+    width: auto;
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, .2);
   backdrop-filter: blur(9px);
   color: cyan;
   border-radius: 20px;
   padding: 30px 40px;
+    display: flex;
 }
 
-.wrapper h1 {
-  font-size: 36px;
+/*The five divs*/
+
+.main_wrapper .wrapper{
+    display: block;
+    margin-top: 20px;
+    max-width: 60rem;
+
+}
+
+.input-div {
+    position: relative;
+    height: 30px;
+    color: cyan;
+    margin: 30px 0;
+
+}
+
+
+
+.input{
+    background: transparent;
+}
+.input,
+.button {
+    width: 100%;
+    padding: 10px;
+    border: 1px ;
+    border-radius: 5px;
+
+
+}
+
+button {
+    background: navy;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0a6ebd;
+}
+
+/* Media Query for responsiveness */
+@media (min-width: 320px) {
+    .input-div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .input-div label {
+        flex: 1;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .input-div input {
+        flex: 2;
+    }
+}
+#header{
+    font-size: 36px;
   text-align: center;
   color: navy;
+    margin-bottom: 10px;
 }
 
-.wrapper .input-box {
-  display: flex;
-  flex-direction: column;
-  margin: 20px 0;
-}
-
-.wrapper .input-box label {
-  font-size: 18px;
-  color: #fd5800;
-  margin-bottom: 5px;
-}
-
-.wrapper .input-box input {
-  width: 100%;
-  height: 45px;
-  background: transparent;
-  border: none;
-  outline: none;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 40px;
-  font-size: 16px;
-  color: #fd5800;
-  padding: 10px;
-}
-
-.wrapper .input-box select {
-  width: 100%;
-  height: 45px;
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 40px;
-  font-size: 16px;
-  color: #fd5800;
-  padding: 10px;
-}
-
-.wrapper .input-box .checkbox-label {
-  display: flex;
-  align-items: center;
-}
-
-.wrapper .input-box input[type="checkbox"] {
-  accent-color: #fd5800;
-  margin-right: 5px;
-}
-
-.wrapper .remember-forgot {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14.5px;
-  margin: -15px 0 15px;
-}
-
-.wrapper .remember-forgot label input {
-  accent-color: #fd5800;
-  margin-right: 5px;
-}
-
-.wrapper .remember-forgot a {
-  color: #fd5800;
-  text-decoration: none;
-}
-
-.wrapper .remember-forgot a:hover {
-  text-decoration: underline;
-  color: cyan;
-}
-
-.wrapper .btn {
-  width: 100%;
+#register{
+  width: 50%;
   height: 45px;
   background: navy;
   border: none;
   outline: none;
   border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  font-size: 16px;
-  color: white;
-  font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px ;
 }
 
-.wrapper .btn:hover {
-  transform: scale(1.05);
-  color: #fd5800;
+.btn{
+    text-align: right;
+    margin-right: 40px;
+}
+#register:hover{
+     scale: 1.05;
+     color: #fd5800;
 }
 
-.wrapper .register-link {
-  font-size: 14.5px;
-  text-align: center;
-  margin: 20px 0 15px;
+.close {
+  justify-content: space-between;
+  font-size: 17px;
+
+}
+.close input[type="checkbox"] {
+  width: 20px; /* Increase the width of the checkbox */
+  height: 20px; /* Increase the height of the checkbox */
+  margin-right: 10px; /* Add right margin to the checkbox */
 }
 
-.register-link p a {
-  color: #fd5800;
-  text-decoration: none;
-  font-weight: 600;
+
+
+.main_wrapper .input-div{
+      width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 15px;
+  color:#fd5800 ;
+    padding: 10px 5px 10px 5px;
+
 }
 
-.register-link p a:hover {
-  text-decoration: underline;
-  color: cyan;
+#first_name,#second_name,#id_number,#phone_number,#school_name,#registration_number,#year_of_study,#course,#email,#password,#confirm_password{
+    background: transparent;
+    border-radius: 20px;
+    border-color: white;
+    height: 40px;
+    color: green;
+    font-size: 18px;
+    font-weight: 50;
+
+}
+.pass_word{
+    text-align: right;
+}
+
+/* Increase the size of the radio buttons */
+input[type="radio"] {
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+    margin: 10px;
+    display: inline-block;
+}
+.student_not{
+    margin-top: 15px;
+}
+.log_in-link{
+    text-align: right;
+    color: white;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+.log_in-link a{
+    color: #fd5800;
+}
+.log_in-link a:hover{
+    color: cyan;
 }
